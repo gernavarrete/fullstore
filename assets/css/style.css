@@ -68,3 +68,23 @@ main > div > img {
     width: 100%;
     height: 100%;
 }   
+.somos{
+    background-color: rgb(75,69,121);
+    padding: 5px;
+    border: 1px;
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    
+}
+
+.somos_box{
+    text-align: center;
+    border: 3px solid black;
+    margin: 15px;
+}
+
+.somos_box p {
+    margin-top: 90px;
+    text-align: center;
+}
