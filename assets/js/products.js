@@ -4,8 +4,8 @@ async function getApi() {
     .then((data) => data.products);
   console.table(products);
   let productsElements = products.map(
-    (product) => `<div class="divCard">
-  <h1>${product.title}</h1>
+    (product) =>
+      `<div class="divCard"><h1>${product.title}</h1>
   <div class="divImages">
   <span class="material-symbols-outlined">
   arrow_back_ios
@@ -19,8 +19,10 @@ async function getApi() {
     <button>Add Cart</button>
   </div>`
   );
-
-  document.getElementById("productSection").innerHTML = productsElements;
+  console.log(productsElements.toString());
+  document.getElementById("productSection").innerHTML = productsElements
+    .toString()
+    .replaceAll(",", "");
 }
 
 getApi();
