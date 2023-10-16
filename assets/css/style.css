@@ -67,6 +67,7 @@ main > div > img {
     border-radius: 0.5rem;
     width: 100%;
     height: 100%;
+
 }   
 .somos{
     background-color: rgb(75,69,121);
@@ -87,4 +88,45 @@ main > div > img {
 .somos_box p {
     margin-top: 90px;
     text-align: center;
+
+} 
+.sectionProducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.productSection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;    
+}
+
+.divCard {
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    width: 30%;
+}
+
+.divCard img {
+    width: 200px;
+    height: 200px;
+    object-fit:contain;
+}
+
+.divCard button {
+    margin-bottom: 1rem;
+}
+
+.divImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
