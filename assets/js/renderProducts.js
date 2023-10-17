@@ -7,7 +7,7 @@ export function renderProducts(data) {
   let dataProducts = data.products;
   products = dataProducts
     .map(
-      (product) => `<div class="divCard"><h1>${product.title}</h1>
+      (product) => `<div class="divCard">
             <div class="divImages">
             <span class="material-symbols-outlined">
             arrow_back_ios
@@ -16,7 +16,8 @@ export function renderProducts(data) {
               <span class="material-symbols-outlined">
               arrow_forward_ios
               </span>
-            </div>
+              </div>
+              <h1>${product.title}</h1>
               <h1>u$s ${product.price}</h1>
               <button>Add Cart</button>
             </div>`
