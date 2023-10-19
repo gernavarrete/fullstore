@@ -7,8 +7,9 @@ export function renderProducts(data) {
   let dataProducts = data.products;
   products = dataProducts
     .map(
-      (product) => `<div class="divCard">
-            <div class="divImages">
+      (product) => `<div class="div_card">
+            
+            <div class="div_images">
             <span class="material-symbols-outlined">
             arrow_back_ios
             </span>
@@ -20,10 +21,11 @@ export function renderProducts(data) {
               <h1>${product.title}</h1>
               <h1>u$s ${product.price}</h1>
               <button>Add Cart</button>
+              
             </div>`
     )
     .toString()
     .replaceAll(",", "");
-
+  console.log(products);
   return products;
 }

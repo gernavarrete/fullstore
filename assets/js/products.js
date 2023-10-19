@@ -1,6 +1,7 @@
 export async function getApi(url, containerId) {
-  let products = await fetch(url)
-    .then((res) => res.json())
+  let products = await axios
+    .get(url)
+    .then((res) => res.data)
     .then((data) =>
       data.products
         .map(
@@ -24,7 +25,7 @@ export async function getApi(url, containerId) {
     );
   console.log(products);
 
-  //document.getElementById(containerId).innerHTML = products
+  //document.getElementById(containerId).innerHTML = products;
 }
 
 export class Products {
@@ -42,10 +43,11 @@ export class Products {
         }
 
         let products = cb(data);
+        console.log(products);
         this.#renderContainer(products);
       });
   }
   #renderContainer(data) {
-    this.container.innerHTML = data;
+    this.container.innerHTML = !data ? `<h1>Loading</h1>` : data;
   }
 }
