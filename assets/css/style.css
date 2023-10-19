@@ -39,7 +39,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: solid 1px red;
+    
 }
 
 main > div {
@@ -127,7 +127,8 @@ main > div > img {
 }
 
 .divCard {
-    background-color: whitesmoke;
+    background: linear-gradient(transparent,rgba(0, 0, 0, 0.089));
+    box-shadow: 0 25px 25px rgba(255, 255, 255, 0.25);
     border-radius: 1rem;
     margin: 1rem 1rem 1rem 1rem;
     display: flex;
@@ -138,11 +139,32 @@ main > div > img {
     width: 30%;
 }
 
+p {
+    font-family: var(--font-family-text);
+    text-align: justify;
+    padding: 0 2rem 0 2rem ;
+}
+
+.divCard:hover {
+    transition-duration: 100ms;
+    scale: 1.01;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+    cursor:pointer;
+}
+
+.divCard span:hover {
+    transition-duration: 200ms;
+    scale: 1.5;
+    cursor: pointer;
+}
+
 .divCard img {
     width: 200px;
     height: 200px;
     object-fit:contain;
 }
+
+
 
 .divCard button {
     margin-bottom: 1rem;
@@ -198,4 +220,5 @@ main > div > img {
 }
 .footerBox h2{
     font-family: var(--font-family-tittle); 
+
 }
