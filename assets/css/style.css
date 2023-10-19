@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway&display=swap');
 * {
+    margin:0 ;
     padding: 0;
     box-sizing: border-box;
 }
@@ -22,6 +23,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 1rem;
 }
 
 h1{
@@ -167,6 +169,7 @@ p {
 
 
 .div_card button {
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -250,18 +253,23 @@ p {
         scale: 1.5;
     }
 }
-    
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .footer{
     background-color: rgb(75,69,121);
     display: flex;
     justify-content:center;
     color:white;
-    width: 90%;
+    width: 100%;
     flex-direction: column;
     height: 12rem;
     margin-top: 1rem;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     align-items: center;
 }
 
@@ -270,8 +278,7 @@ p {
     text-align: center;
     margin-top: 20px;
     justify-items: center;
-    
-   }
+}
 .footerBox a{
     align-items: center;
     color: white;
