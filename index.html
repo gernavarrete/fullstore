@@ -18,12 +18,13 @@
   <body>
     <header>
       <nav class="navbar">
-        <img
-          src="./assets/media/image/Fullstore-logo.jpeg"
-          alt="Fullstore-logo"
-          id="logo"
-        />
-        <div>
+        <a title="Fullstore-logo" href="./index.html"
+          ><img
+            src="./assets/media/image/Fullstore-logo.jpeg"
+            alt="Fullstore-logo"
+            id="logo"
+        /></a>
+        <div class="div_links">
           <a href="">Category</a>
           <a href="#about_section">About</a>
         </div>
@@ -38,15 +39,15 @@
       </nav>
     </header>
     <main>
-      <section class="homeSection" id="homeSection"></section>
-      <section class="sectionProducts">
+      <section class="home_section" id="home_section"></section>
+      <section class="section_products">
         <h1>Products</h1>
-        <div class="productSection" id="productSection"></div>
+        <div class="cards_section" id="cards_section"></div>
       </section>
       <section class="about_section" name="about_section" id="about_section">
         <h1>About</h1>
         <div class="somos">
-          <div class="somos_box" style="width: 50%">
+          <div class="somos_box">
             <h2>¿Quienes somos?</h2>
             <p>
               Somos un E-commerce de diferentes productos y contamos con
@@ -57,11 +58,9 @@
               <br />llevando nuestro alcanse a toda Argentina y Latinoamérica.
             </p>
           </div>
-          <div class="somos_box" style="width: 50%">
+          <div class="somos_box">
             <h2>Nuestras Oficinas</h2>
             <iframe
-              width="560"
-              height="315"
               src="https://www.youtube.com/embed/Wnit-GElQPg?si=LbS-nGoPXBaGVRRm"
               title="YouTube video player"
               frameborder="0"
@@ -93,5 +92,6 @@
     </footer>
   </body>
   <script src="./assets/js/index.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <!-- <script src="./assets/js/products.js"></script> -->
 </html>
