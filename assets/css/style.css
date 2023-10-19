@@ -1,12 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway&display=swap');
-  body{
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
     --font-family-tittle: 'Raleway', sans-serif;
     --font-family-text: 'Lato', sans-serif;
-  }
-h1{
-    font-family: var(--font-family-tittle);
+    --breakpoint-phone-device: 575px
+    --tablet-device: 1000px
+    min-height: 100vh;
 }
+
 #logo {
     width: 6rem;
     height: 6rem;
@@ -19,6 +24,9 @@ nav {
     align-items: center;
 }
 
+h1{
+    font-family: var(--font-family-tittle);
+}
 nav > div {
     width: 40%;
     display: flex;
@@ -51,19 +59,6 @@ main > div {
     height: 30rem;
     border-radius: 0.5rem;
 }
-/* main > div > span:first-child{
-    margin-left: 1.2rem;
-    position: absolute;
-    font-size: xx-large;
-    z-index: 1;
-}
-
-main > div > span:last-child{
-    margin-left: 86%;
-    position: absolute;
-    font-size: xx-large;
-    z-index: 1;
-} */
 
 main > div > span {
     font-size: xx-large;
@@ -83,20 +78,22 @@ main > div > img {
     height: 100%;
 
 }   
+
+p {
+    font-family: var(--font-family-text);
+    text-align: justify;
+    padding: 0 2rem 0 2rem ;
+} 
 .somos{
     background-color: rgb(75,69,121);
     padding: 5px;
-    
     display: flex;
     justify-content: space-between;
     color:white;
     width: 90%;
-
-    
 }
 .about_section{
     width: 100%;
-   
     display: flex;
     justify-content: center;
     margin-top: 3rem;
@@ -107,6 +104,7 @@ main > div > img {
     text-align: center;
     border: 3px solid black;
     margin: 15px;
+    width: 50%
 }
 
 .somos_box p {
@@ -114,19 +112,26 @@ main > div > img {
     text-align: center;
     font-family: var(--font-family-text);
 } 
-.sectionProducts {
+
+.somos_box > iframe {
+    width: 540px;
+    height: 300px
+}
+.section_products {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.productSection {
+
+.cards_section {
     display: flex;
     flex-wrap: wrap;
     width: 90%;    
 }
 
-.divCard {
+
+.div_card {
     background: linear-gradient(transparent,rgba(0, 0, 0, 0.089));
     box-shadow: 0 25px 25px rgba(255, 255, 255, 0.25);
     border-radius: 1rem;
@@ -139,39 +144,110 @@ main > div > img {
     width: 30%;
 }
 
-p {
-    font-family: var(--font-family-text);
-    text-align: justify;
-    padding: 0 2rem 0 2rem ;
-}
 
-.divCard:hover {
+.div_card:hover {
     transition-duration: 100ms;
     scale: 1.01;
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
     cursor:pointer;
 }
 
-.divCard span:hover {
+
+.div_card span:hover {
     transition-duration: 200ms;
     scale: 1.5;
     cursor: pointer;
 }
 
-.divCard img {
+.div_card img {
     width: 200px;
     height: 200px;
     object-fit:contain;
 }
 
 
-
-.divCard button {
+.div_card button {
     margin-bottom: 1rem;
 }
 
-.divImages {
+.div_images {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
+/* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 991px){
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .somos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .somos_box{
+        width: 100%;
+    }
+
+    .somos_box iframe {
+        
+        object-fit: cover;
+    }
+
+    .div_card {
+        width: 100%;
+    }
+
+    .div_card button {
+        scale: 1.5;
+    }
+    
+}
+
+/* Teléfonos */
+@media only screen and (max-width: 575px){
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .somos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .somos_box{
+        width: 100%;
+    }
+
+    .somos_box iframe {
+        width: auto;
+        height: auto;
+        object-fit:cover;
+    }
+
+    .div_card {
+        width: 100%;
+    }
+
+    .div_card button {
+        scale: 1.5;
+    }
+}
+    
+
