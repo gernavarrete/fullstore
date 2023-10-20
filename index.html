@@ -15,7 +15,7 @@
       }
     </style>
   </head>
-  <body>
+  <body onload="detailProduct();">
     <header>
       <nav class="navbar">
         <a title="Fullstore-logo" href="./index.html"
@@ -25,10 +25,10 @@
             id="logo"
         /></a>
         <div class="div_links">
-          <a href="">Category</a>
+          <a href="#section_products">Category</a>
           <a href="#about_section">About</a>
         </div>
-        <div>
+        <div class="div_icons">
           <input type="text" placeholder="Search product" />
           <span class="material-symbols-outlined">
             shopping_cart_checkout
@@ -38,9 +38,9 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main id="main">
       <section class="home_section" id="home_section"></section>
-      <section class="section_products">
+      <section class="section_products" name="section_products">
         <h1>Products</h1>
         <div class="cards_section" id="cards_section"></div>
       </section>
