@@ -23,7 +23,7 @@ export async function getApi(url, containerId) {
         .toString()
         .replaceAll(",", "")
     );
-  console.log(products);
+  //console.log(products);
 
   //document.getElementById(containerId).innerHTML = products;
 }
@@ -43,11 +43,11 @@ export class Products {
         }
 
         let products = cb(data);
-        console.log(products);
+        //console.log(products);
         this.#renderContainer(products);
       });
   }
   #renderContainer(data) {
-    this.container.innerHTML = !data ? `<h1>Loading</h1>` : data;
+    this.container.innerHTML = !data ? `<h1>Loading...</h1>` : data;
   }
 }
