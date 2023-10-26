@@ -24,6 +24,6 @@ export function renderProducts(data) {
     )
     .toString()
     .replaceAll(",", "");
-  //console.log(products);
+
   return products;
 }
