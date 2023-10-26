@@ -85,11 +85,12 @@ main > div > img {
 
 }   
 
-p {
+/* p {
     font-family: var(--font-family-text);
     text-align: justify;
     padding: 0 2rem 0 2rem ;
-} 
+}  */
+
 .somos{
     background-color: rgb(75,69,121);
     padding: 5px;
@@ -194,7 +195,7 @@ p {
 }
 
 
-.div_card .material-symbols-outlined:hover {
+.material-symbols-outlined:hover {
     transition-duration: 200ms;
     scale: 1.5;
     cursor: pointer;
@@ -207,7 +208,7 @@ p {
 }
 
 
-.div_card button {
+/* .div_card button {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: solid 1px grey;
@@ -221,7 +222,7 @@ p {
 .div_card button:hover {
     background-color: rgb(180, 216, 247);
     
-}
+} */
 
 .div_images {
     display: flex;
@@ -229,6 +230,48 @@ p {
     justify-content: center;
 
 }
+
+.div_product {
+    display: flex;
+    width: 100%;
+}
+
+.div_images_product img {
+    width: 70%;
+} 
+.div_images_product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_info {
+    width: 40%;
+}
+
+.product_btn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: solid 1px grey;
+    background-color: aliceblue;
+    padding: 0.5rem;
+    border-radius: 3px;
+    scale: 1;
+    cursor: pointer;
+}
+
+.product_btn:hover {
+    background-color: rgb(180, 216, 247);
+}
+
+.div_info p {
+    font-family: var(--font-family-text);
+    margin-bottom: 2rem;
+} 
+
+/* .div_info h2 {
+
+} */
 
 footer {
     display: flex;
