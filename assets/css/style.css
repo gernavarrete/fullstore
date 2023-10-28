@@ -24,7 +24,7 @@ nav {
     margin-top: 1rem;
 }
 
-h1{
+.div_card h1{
     font-family: var(--font-family-tittle);
     margin: 0.5rem;
 }
@@ -269,9 +269,9 @@ main > div > img {
     margin-bottom: 2rem;
 } 
 
-/* .div_info h2 {
-
-} */
+.div_card h1{
+    font-family: var(--font-family-tittle);
+}
 
 footer {
     display: flex;
