@@ -33,6 +33,8 @@ export class RenderData {
     this.container = document.getElementById(containerId);
   }
 
+  data() {}
+
   fetchData(url, cb, options = {}) {
     fetch(url)
       .then((res) => res.json())
@@ -61,14 +63,14 @@ export class RenderData {
         let dataProduct = await axios
           .get(`https://dummyjson.com/products/${id}`)
           .then((res) => res.data)
-          .then(
-            (data) => `<div class="div_product">
+          .then((data) => {
+            return `<div class="div_product">
             <div class="div_images_product">
-            <span class="material-symbols-outlined">
+            <span class="material-symbols-outlined span_back_image">
             arrow_back_ios
             </span>
-            <img src="${data.images[0]}" alt="${data.title}">
-            <span class="material-symbols-outlined">
+            <img src="${data.images}" alt="${data.title}">
+            <span class="material-symbols-outlined span_froward_image">
             arrow_forward_ios
             </span>
             </div>
@@ -77,7 +79,7 @@ export class RenderData {
               <hr>
               <br>
               <p>${data.description}</p>
-              <h1>u$s ${data.price}</h1>
+              <h2>u$s ${data.price}</h2>
               <br>
               <div>
               <button class="product_btn">Add Cart</button>
@@ -85,19 +87,29 @@ export class RenderData {
               <br>
               </div>
               </div>
-              <button class="product_btn"> Back </button>
+              <button class="product_btn"><a href="./index.html"> Back </a></button>
         
-        `
-          );
-
-        /* let divProduct = document.createElement("div")
-        divProduct.classList.add("div_product")
-        divProduct.setAttribute("id", "div_product")
-        let image = document.createElement
-        let main = document.getElementById("section_products") */
+        `;
+          });
         main.innerHTML = dataProduct;
+        let spanImageBack = document.querySelectorAll(".span_back_image");
+
+        spanImageBack.forEach((span) =>
+          span.addEventListener("click", function () {
+            handlerImage(-1);
+          })
+        );
+
+        let spanImageForward = document.querySelectorAll(".span_forward_image");
+
+        spanImageForward.forEach((span) =>
+          span.addEventListener("click", function () {
+            handlerImage(+1);
+          })
+        );
+
+        handlerImage = (num) => {};
       });
     });
-    console.log(productsCreate);
   }
 }
