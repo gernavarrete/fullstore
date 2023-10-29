@@ -34,7 +34,7 @@
             placeholder="Search product"
             id="search_product"
           />
-          <span class="material-symbols-outlined">
+          <span class="material-symbols-outlined" id="cart_icon">
             shopping_cart_checkout
           </span>
           <span class="material-symbols-outlined" id="open-modal-login">
@@ -44,56 +44,58 @@
         </div>
       </nav>
     </header>
-    <div id="container">
-    <div class="carrousel" id="slide1">
-        <img src="assets/media/image/6c047d95.jpg"/>
-      <div class="flechas">
-        <a href="#slide3">
-          <i class="fi fi-sr-angle-circle-left"></i>
-        </a>
-        <a href="#slide2">
-          <i class="fi fi-sr-angle-circle-right"></i>
-        </a>
-      </div>
-    </div>
-    <div class="carrousel" id="slide2">  
-        <img src="assets/media/image/2.jpg"/>
-      <div class="flechas">
-        <a href="#slide1">
-          <i class="fi fi-sr-angle-circle-left"></i>
-        </a>
-        <a href="#slide3">
-          <i class="fi fi-sr-angle-circle-right"></i>
-        </a>
-      </div>
-      </div>
-      <div class="carrousel" id="slide3">
-        <img src="assets/media/image/3.jpg"/>
-      <div class="flechas">
-        <a href="#slide2">
-          <i class="fi fi-sr-angle-circle-left"></i>
-        </a>
-        <a href="#slide1">
-          <i class="fi fi-sr-angle-circle-right"></i>
-        </a>
-      </div>
-      </div>
-   </div>
-   <ul class="slider">
-    <li>
-       <a href="#slide1"></a>
-    </li>
-    <li>
-      <a href="#slide2"></a>
-   </li>
-   <li>
-       <a href="#slide3"></a>
-    </li>
-   </ul>
-  </div>
-   
     <main id="main">
-      <section class="home_section" id="home_section"></section>
+      <section class="home_section" id="home_section">
+        <div id="container">
+          <div class="carrousel" id="slide1">
+              <img src="assets/media/image/6c047d95.jpg"/>
+            <div class="flechas">
+              <a href="#slide3">
+                <i class="fi fi-sr-angle-circle-left"></i>
+              </a>
+              <a href="#slide2">
+                <i class="fi fi-sr-angle-circle-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="carrousel" id="slide2">  
+              <img src="assets/media/image/2.jpg"/>
+            <div class="flechas">
+              <a href="#slide1">
+                <i class="fi fi-sr-angle-circle-left"></i>
+              </a>
+              <a href="#slide3">
+                <i class="fi fi-sr-angle-circle-right"></i>
+              </a>
+            </div>
+            </div>
+            <div class="carrousel" id="slide3">
+              <img src="assets/media/image/3.jpg"/>
+            <div class="flechas">
+              <a href="#slide2">
+                <i class="fi fi-sr-angle-circle-left"></i>
+              </a>
+              <a href="#slide1">
+                <i class="fi fi-sr-angle-circle-right"></i>
+              </a>
+            </div>
+            </div>
+         </div>
+         <ul class="slider">
+          <li>
+             <a href="#slide1"></a>
+          </li>
+          <li>
+            <a href="#slide2"></a>
+         </li>
+         <li>
+             <a href="#slide3"></a>
+          </li>
+         </ul>
+        </div>
+
+      </section>
+      <br>
       <section
         class="section_products"
         name="section_products"
@@ -102,6 +104,15 @@
         <h1>Products</h1>
         <br />
         <div class="cards_section" id="cards_section"></div>
+        <div>
+          <span class="material-symbols-outlined span_back_image">
+            arrow_back_ios
+          </span>
+          <span id="span_pagination"></span>
+          <span class="material-symbols-outlined span_froward_image">
+            arrow_forward_ios
+          </span>
+        </div>
       </section>
       <section class="about_section" name="about_section" id="about_section">
         <h1>About</h1>
@@ -130,8 +141,11 @@
           </div>
         </div>
       </section>
-      
-      <section class="form-register"  >
+      <div id="modal-login-container" class="modal-login-container">
+      <section class="form-register"  id="form-register">
+        <button class="closed-button-modal" id="closed-button-modal">
+          X
+        </button>
         <form action="submit" id="formulario">
         <h4>Formulario Registro</h4>
 
@@ -163,6 +177,7 @@
         <p><a href="#">¿Ya tengo Cuenta?</a></p>
         </form>
       </section>
+    </div>
     </main>
     <footer>
       <div class="footer">
@@ -199,6 +214,7 @@
   <script src="./assets/js/index.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- <script src="./assets/js/products.js"></script> -->
-    <script src="./assets/js/validationForm.js" ></script>
+  <script src="./assets/js/validationForm.js" ></script>
   <script src="./assets/js/modal.js"></script>
+  <script src="./assets/js/pagination.js"></script>
 </html>
