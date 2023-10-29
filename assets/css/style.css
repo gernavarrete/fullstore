@@ -37,16 +37,28 @@ h3 {
 nav > div {
     width: 40%;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
 }
 
-nav > img {
+nav > a > img {
     width: 20%;
+    transition-duration: 0.5s;
 }
+
+nav > a > img:hover{
+    transition-duration: 0.5s;
+    scale: 1.1;
+}
+
 nav > div > a{
     font-family: var(--font-family-tittle);
     font-weight: 500;
     font-size: x-large;
+}
+
+nav > div > a:hover {
+    color: rgba(115, 154, 206, 1);
 }
 main {
     
@@ -114,39 +126,51 @@ i{
 .slider li a:hover{
     background: rgb(75,69,121);
  }
-main > div {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 30rem;
-    /* border-radius: 0.5rem; */
-}
-
-main > div > span {
-    font-size: xx-large;
-}
-
-
-main > div > span:hover {
-    cursor: pointer;
-    scale: 1.5;
-}
-
-
-
-main > div > img {
-    border-radius: 0.5rem;
-    width: 100%;
-    height: 100%;
-
-}   
+ 
+ main > div {
+     width: 90%;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     height: 30rem;
+     /* border-radius: 0.5rem; */
+ }
+ 
+ main > div > span {
+     font-size: xx-large;
+ }
+ 
+ 
+ main > div > span:hover {
+     cursor: pointer;
+     scale: 1.5;
+ }
+ 
+ 
+ 
+ main > div > img {
+     border-radius: 0.5rem;
+     width: 100%;
+     height: 100%;
+ 
+ }   
 
 /* p {
     font-family: var(--font-family-text);
     text-align: justify;
     padding: 0 2rem 0 2rem ;
 }  */
+
+.search_product {
+    border: solid 1px rgba(108, 131, 127, 0.685);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+}
+
+.search_product:hover {
+    border: solid 1.5px rgba(115, 154, 206, 1);
+}
+
 
 .somos{
     background-color: rgb(75,69,121);
