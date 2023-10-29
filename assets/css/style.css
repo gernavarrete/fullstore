@@ -420,13 +420,11 @@ footer {
     position: relative;
     width: 400px;
     background: #24303c;
-    padding: 30px;
-    margin: auto;
+    padding: 2rem;
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;
-    z-index: 100;
 }
 
 .form-register h4 {
@@ -438,7 +436,6 @@ footer {
     background: #24303c;
     padding: 10px;
     border-radius: 4px;
-    margin-bottom: 16px;
     border: 1px solid #1f53c5;
     font-family: 'calibri';
     font-size: 18px;
@@ -446,8 +443,9 @@ footer {
 }
 
 .form-register p{
-    height: 40px;
+    height: 20px;
     text-align: center;
+    margin-bottom: 0.5rem;
     font-size: 18px;
 }
 .form-register a:hover {
