@@ -71,15 +71,85 @@
         </div>
       </section>
       <section></section>
-      <section class="form-register">
+      <section class="form-register"  >
+        <form action="submit" id="formulario">
         <h4>Formulario Registro</h4>
-        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-        <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+
+        <div class="form-control">
+          <input class="controls" type="text" name="nombres" id="nombre" placeholder="Ingrese su Nombre">
+          <p></p> 
+        </div>
+
+        <div class="form-control">
+          <input class="controls" type="text" name="apellidos" id="apellido" placeholder="Ingrese su Apellido">
+          <p></p> 
+        </div>
+        <div class="form-control">
+          <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+          <p></p>
+        </div>
+        
+        <div class="form-control">
+          <input class="controls" type="password" name="pass" id="pass" placeholder="Ingrese su Contraseña">
+          <p></p> 
+        </div>
+        <div class="form-control"> 
+          <input class="controls" type="password" name="passConfirma" id="passConfirma" placeholder="Confirme su Contraseña">
+         <p></p>
+        </div>
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
         <input class="botons" type="submit" value="Registrar">
         <p><a href="#">¿Ya tengo Cuenta?</a></p>
+        </form>
       </section>
     </main>
     <footer>
@@ -116,5 +186,6 @@
   </body>
   <script src="./assets/js/index.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <!-- <script src="./assets/js/products.js"></script> -->
+    <!-- <script src="./assets/js/products.js"></script> -->
+    <script src="./assets/js/validationForm.js" ></script>
 </html>

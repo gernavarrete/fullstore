@@ -327,7 +327,20 @@ footer {
     color: white;
     margin: 16px 0;
     font-size: 16px;
+    cursor: pointer;
+}
+.form-control.ok input {
+    border: 0.1px solid;
+    border-color: #08ffc8;
+}
+.form-control.falla input {
+    border: 0.1px solid;
+    border-color: #fe5f55;
+}
 
+.form-control.falla p {
+    visibility: visible;
+    color:#e74c3c;
 }
 
 
