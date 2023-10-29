@@ -33,19 +33,27 @@
           <span class="material-symbols-outlined">
             shopping_cart_checkout
           </span>
-          <span class="material-symbols-outlined"> person </span>
+          <span class="material-symbols-outlined" id="open-modal-login">
+            person
+          </span>
           <span class="material-symbols-outlined"> toggle_off </span>
         </div>
       </nav>
     </header>
     <main id="main">
       <section class="home_section" id="home_section"></section>
-      <section class="section_products" name="section_products">
+      <section
+        class="section_products"
+        name="section_products"
+        id="section_products"
+      >
         <h1>Products</h1>
+        <br />
         <div class="cards_section" id="cards_section"></div>
       </section>
       <section class="about_section" name="about_section" id="about_section">
         <h1>About</h1>
+        <br />
         <div class="somos">
           <div class="somos_box">
             <h2>¿Quienes somos?</h2>
@@ -70,17 +78,45 @@
           </div>
         </div>
       </section>
-      <section></section>
-      <section class="form-register">
-        <h4>Formulario Registro</h4>
-        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-        <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-        <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
-        <input class="botons" type="submit" value="Registrar">
-        <p><a href="#">¿Ya tengo Cuenta?</a></p>
-      </section>
+      <div id="modal-login-container" class="modal-login-container">
+        <section class="form-register" id="form-register">
+          <button class="closed-button-modal" id="closed-button-modal">
+            X
+          </button>
+          <h4>Formulario Registro</h4>
+          <input
+            class="controls"
+            type="text"
+            name="nombres"
+            id="nombres"
+            placeholder="Ingrese su Nombre"
+          />
+          <input
+            class="controls"
+            type="text"
+            name="apellidos"
+            id="apellidos"
+            placeholder="Ingrese su Apellido"
+          />
+          <input
+            class="controls"
+            type="email"
+            name="correo"
+            id="correo"
+            placeholder="Ingrese su Correo"
+          />
+          <input
+            class="controls"
+            type="password"
+            name="correo"
+            id="correo"
+            placeholder="Ingrese su Contraseña"
+          />
+          <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+          <input class="botons" type="submit" value="Registrar" />
+          <p><a href="#">¿Ya tengo Cuenta?</a></p>
+        </section>
+      </div>
     </main>
     <footer>
       <div class="footer">
@@ -116,5 +152,5 @@
   </body>
   <script src="./assets/js/index.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <!-- <script src="./assets/js/products.js"></script> -->
+  <script src="./assets/js/modal.js"></script>
 </html>
