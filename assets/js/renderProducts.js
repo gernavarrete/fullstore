@@ -5,6 +5,9 @@ export function renderProducts(data) {
     return null;
   }
   let dataProducts = data.products;
+
+  console.log(dataProducts.length);
+
   products = dataProducts
     .map(
       (product) => `<div class="div_card" id="${product.id}">
