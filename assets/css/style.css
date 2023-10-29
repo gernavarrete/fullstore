@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway&display=swap');
 @import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+
 * {
     margin:0 ;
     padding: 0;
@@ -9,6 +11,7 @@
 body {
     --font-family-tittle: 'Raleway', sans-serif;
     --font-family-text: 'Lato', sans-serif;
+    background-color: #d3b8e5;
     
 }
 
@@ -173,12 +176,13 @@ i{
 
 
 .somos{
-    background-color: rgb(75,69,121);
+    background-color: #d1ddf0;
     padding: 5px;
     display: flex;
     justify-content: space-between;
-    color:white;
+    color:black;
     width: 90%;
+    border-radius: 0.5rem;
 }
 .about_section{
     width: 100%;
@@ -190,7 +194,7 @@ i{
 }
 .somos_box{
     text-align: center;
-    border: 3px solid black;
+   
     margin: 15px;
     width: 50%
 }
@@ -199,11 +203,14 @@ i{
     margin-top: 90px;
     text-align: center;
     font-family: var(--font-family-text);
+
 } 
 
 .somos_box > iframe {
     width: 540px;
-    height: 300px
+    height: 300px;
+    border-radius: 0.5rem;
+    
 }
 .section_products {
     display: flex;
@@ -266,7 +273,7 @@ i{
     content: '';
     position: absolute;
     inset: 2px;
-    background: linear-gradient(rgb(255, 255, 255),rgb(209, 221, 240));
+    background: linear-gradient(#ffffff,#d1ddf0);
     border-radius: 0.9rem;
     z-index: -1;
 }
@@ -370,10 +377,10 @@ footer {
 }
 
 .footer{
-    background-color: rgb(75,69,121);
+    background-color: #d1ddf0;
     display: flex;
     justify-content:center;
-    color:white;
+    color:black;
     width: 100%;
     flex-direction: column;
     height: 12rem;
