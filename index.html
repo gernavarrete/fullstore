@@ -15,7 +15,7 @@
       }
     </style>
   </head>
-  <body onload="detailProduct();">
+  <body>
     <header>
       <nav class="navbar">
         <a title="Fullstore-logo" href="./index.html"
@@ -29,23 +29,83 @@
           <a href="#about_section">About</a>
         </div>
         <div class="div_icons">
-          <input type="text" placeholder="Search product" />
+          <input
+            type="search"
+            placeholder="Search product"
+            id="search_product"
+          />
           <span class="material-symbols-outlined">
             shopping_cart_checkout
           </span>
-          <span class="material-symbols-outlined"> person </span>
+          <span class="material-symbols-outlined" id="open-modal-login">
+            person
+          </span>
           <span class="material-symbols-outlined"> toggle_off </span>
         </div>
       </nav>
     </header>
+    <div id="container">
+    <div class="carrousel" id="slide1">
+        <img src="assets/media/image/6c047d95.jpg"/>
+      <div class="flechas">
+        <a href="#slide3">
+          <i class="fi fi-sr-angle-circle-left"></i>
+        </a>
+        <a href="#slide2">
+          <i class="fi fi-sr-angle-circle-right"></i>
+        </a>
+      </div>
+    </div>
+    <div class="carrousel" id="slide2">  
+        <img src="assets/media/image/2.jpg"/>
+      <div class="flechas">
+        <a href="#slide1">
+          <i class="fi fi-sr-angle-circle-left"></i>
+        </a>
+        <a href="#slide3">
+          <i class="fi fi-sr-angle-circle-right"></i>
+        </a>
+      </div>
+      </div>
+      <div class="carrousel" id="slide3">
+        <img src="assets/media/image/3.jpg"/>
+      <div class="flechas">
+        <a href="#slide2">
+          <i class="fi fi-sr-angle-circle-left"></i>
+        </a>
+        <a href="#slide1">
+          <i class="fi fi-sr-angle-circle-right"></i>
+        </a>
+      </div>
+      </div>
+   </div>
+   <ul class="slider">
+    <li>
+       <a href="#slide1"></a>
+    </li>
+    <li>
+      <a href="#slide2"></a>
+   </li>
+   <li>
+       <a href="#slide3"></a>
+    </li>
+   </ul>
+  </div>
+   
     <main id="main">
       <section class="home_section" id="home_section"></section>
-      <section class="section_products" name="section_products">
+      <section
+        class="section_products"
+        name="section_products"
+        id="section_products"
+      >
         <h1>Products</h1>
+        <br />
         <div class="cards_section" id="cards_section"></div>
       </section>
       <section class="about_section" name="about_section" id="about_section">
         <h1>About</h1>
+        <br />
         <div class="somos">
           <div class="somos_box">
             <h2>¿Quienes somos?</h2>
@@ -70,7 +130,7 @@
           </div>
         </div>
       </section>
-      <section></section>
+      
       <section class="form-register"  >
         <form action="submit" id="formulario">
         <h4>Formulario Registro</h4>
@@ -97,55 +157,7 @@
           <input class="controls" type="password" name="passConfirma" id="passConfirma" placeholder="Confirme su Contraseña">
          <p></p>
         </div>
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+  
         <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
         <input class="botons" type="submit" value="Registrar">
         <p><a href="#">¿Ya tengo Cuenta?</a></p>
@@ -188,4 +200,5 @@
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- <script src="./assets/js/products.js"></script> -->
     <script src="./assets/js/validationForm.js" ></script>
+  <script src="./assets/js/modal.js"></script>
 </html>
