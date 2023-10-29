@@ -33,6 +33,8 @@ export class RenderData {
     this.container = document.getElementById(containerId);
   }
 
+  data() {}
+
   fetchData(url, cb, options = {}) {
     fetch(url)
       .then((res) => res.json())
