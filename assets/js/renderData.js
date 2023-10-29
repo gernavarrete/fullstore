@@ -33,9 +33,7 @@ export class RenderData {
     this.container = document.getElementById(containerId);
   }
 
-  data() {}
-
-  fetchData(url, cb, options = {}) {
+  fetchData(url, cb, product, options = {}) {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -44,7 +42,7 @@ export class RenderData {
           return;
         }
 
-        let products = cb(data);
+        let products = cb(data, product);
         //console.log(products);
         this.#renderContainer(products);
         this.#productListener();
@@ -92,7 +90,7 @@ export class RenderData {
         `;
           });
         main.innerHTML = dataProduct;
-        let spanImageBack = document.querySelectorAll(".span_back_image");
+        /* let spanImageBack = document.querySelectorAll(".span_back_image");
 
         spanImageBack.forEach((span) =>
           span.addEventListener("click", function () {
@@ -108,7 +106,7 @@ export class RenderData {
           })
         );
 
-        handlerImage = (num) => {};
+        handlerImage = (num) => {}; */
       });
     });
   }
