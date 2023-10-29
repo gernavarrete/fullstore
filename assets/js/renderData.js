@@ -67,7 +67,7 @@ export class RenderData {
             <span class="material-symbols-outlined span_back_image">
             arrow_back_ios
             </span>
-            <img src="${data.images}" alt="${data.title}">
+            <img src="${data.images[0]}" alt="${data.title}">
             <span class="material-symbols-outlined span_froward_image">
             arrow_forward_ios
             </span>
