@@ -6,21 +6,34 @@ let inputSearch = document.getElementById("search_product");
 
 const section = new RenderData("cards_section");
 
-section.fetchData("https://dummyjson.com/products?limit=9", renderProducts);
+let quantityProduct = 9;
+
+section.fetchData(
+  `https://dummyjson.com/products?limit=${quantityProduct}`,
+  renderProducts
+);
 
 inputSearch.addEventListener("input", function searchProduct(e) {
   e.preventDefault();
-  console.log(e);
-  if (!e.target.value)
+  if (!e.target.value) {
     return section.fetchData(
-      "https://dummyjson.com/products?limit=9",
+      `https://dummyjson.com/products?limit=${quantityProduct}`,
       renderProducts
     );
-  section.fetchData(
-    "https://dummyjson.com/products?limit=100",
-    renderProductSearch,
-    e.target.value
-  );
+  } else {
+    section.fetchData(
+      "https://dummyjson.com/products?limit=100",
+      renderProductSearch,
+      e.target.value
+    );
+  }
 });
 
-getApi("https://dummyjson.com/products?limit=9", "cards_section");
+/* let cartSection = document.getElementById("cart_icon")
+
+cartSection.addEventListener("click", ()=> {
+    let section = new RenderData("main")
+
+}) */
+
+//getApi("https://dummyjson.com/products?limit=9", "cards_section");

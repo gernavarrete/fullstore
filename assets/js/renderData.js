@@ -43,7 +43,7 @@ export class RenderData {
         }
 
         let products = cb(data, product);
-        //console.log(products);
+
         this.#renderContainer(products);
         this.#productListener();
       });
