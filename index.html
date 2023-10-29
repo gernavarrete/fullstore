@@ -34,7 +34,7 @@
             placeholder="Search product"
             id="search_product"
           />
-          <span class="material-symbols-outlined">
+          <span class="material-symbols-outlined" id="cart_icon">
             shopping_cart_checkout
           </span>
           <span class="material-symbols-outlined" id="open-modal-login">
@@ -54,6 +54,15 @@
         <h1>Products</h1>
         <br />
         <div class="cards_section" id="cards_section"></div>
+        <div>
+          <span class="material-symbols-outlined span_back_image">
+            arrow_back_ios
+          </span>
+          <span id="span_pagination"></span>
+          <span class="material-symbols-outlined span_froward_image">
+            arrow_forward_ios
+          </span>
+        </div>
       </section>
       <section class="about_section" name="about_section" id="about_section">
         <h1>About</h1>
@@ -157,4 +166,5 @@
   <script src="./assets/js/index.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="./assets/js/modal.js"></script>
+  <script src="./assets/js/pagination.js"></script>
 </html>
