@@ -11,6 +11,7 @@
 body {
     --font-family-tittle: 'Raleway', sans-serif;
     --font-family-text: 'Lato', sans-serif;
+    --bg-color: #d3b8e5;
     background-color: #d3b8e5;
     
 }
@@ -302,7 +303,7 @@ i{
 }
 
 .div_card img {
-    width: 200px;
+    width: 70%;
     height: 200px;
     object-fit:contain;
 }
