@@ -74,8 +74,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
+
 #container{
  
     height: 400px;
@@ -199,7 +199,6 @@ i{
 }
 .somos_box{
     text-align: center;
-   
     margin: 15px;
     width: 50%
 }
@@ -296,13 +295,8 @@ i{
 }
 
 
-.div_images_product .material-symbols-outlined:hover {
-    transition-duration: 200ms;
-    scale: 1.5;
-    cursor: pointer;
-}
 
-.div_card img {
+.div_card  img {
     width: 70%;
     height: 200px;
     object-fit:contain;
@@ -329,22 +323,42 @@ i{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
 }
 
 .div_product {
     display: flex;
-    width: 100%;
+    width: 90%;
+    margin-top: 1rem;
+    border-radius: 0.2rem;
+    background: linear-gradient(#ffffff,#d1ddf0);
 }
 
-.div_images_product img {
-    width: 70%;
-} 
 .div_images_product {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.div_images_product .material-symbols-outlined:hover {
+    
+    transition-duration: 200ms;
+    scale: 1.5;
+    cursor: pointer;
+}
+
+.div_img_product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0rem 5rem 0rem 5rem;
+}
+
+.div_images_product .div_img_product img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+} 
 
 .div_info {
     width: 40%;
