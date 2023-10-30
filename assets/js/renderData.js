@@ -89,7 +89,7 @@ export class RenderData {
             <br>
             </div>
             </div>
-            <button class="product_btn"><a href="./index.html"> Back </a></button>
+            <button class="back_button" id="back_button"><a href="./index.html"> Back </a></button>
       
       `;
         };
