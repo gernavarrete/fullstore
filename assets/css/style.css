@@ -30,6 +30,10 @@ nav {
     margin: 0.5rem;
 }
 
+h1 {
+    font-family: var(--font-family-tittle);
+}
+
 h3 {
     font-family: var(--font-family-tittle);
     font-weight: 200;
