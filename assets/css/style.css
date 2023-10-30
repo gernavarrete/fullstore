@@ -606,6 +606,12 @@ footer {
             margin: 0rem 2rem 0rem 2rem;
         }
 
+        .div_images_product .div_img_product img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+        } 
+
         .div_info {
             width: 70%;
             display: flex;
@@ -676,6 +682,12 @@ footer {
             justify-content: space-between;
             margin: 0rem 1rem 0rem 1rem;
         }
+
+        .div_images_product .div_img_product img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+        } 
 
         .div_info {
             width: 70%;
